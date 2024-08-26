@@ -18,7 +18,7 @@ import MouseFollower from 'mouse-follower';
 
 import {useRouter} from 'vue-router';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 const router = useRouter();
 
 const animateOut = () => {
@@ -56,7 +56,11 @@ router.beforeEach((to, from, next) => {
 router.afterEach(animateIn); 
 
 
-onMounted(() => {
+onMounted(async() => {
+  const { gsap } = await import('gsap');
+  const { ScrollTrigger } = await import('gsap/ScrollTrigger');
+  gsap.registerPlugin(ScrollTrigger);
+
   useSmoothScroll(); 
   MouseFollower.registerGSAP(gsap);
   

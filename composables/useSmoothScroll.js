@@ -1,13 +1,12 @@
 import Lenis from '@studio-freight/lenis';
-import gsap from 'gsap';
-
-import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger from GSAP
-
-// gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
 
 export const scrollY = ref(0);
 
-export const useSmoothScroll = () => {
+export const useSmoothScroll = async () => {
+    const gsap = await import('gsap');
+    const { ScrollTrigger } = await import('gsap/ScrollTrigger');
+    gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin dynamically
+
     const scrollLenis = new Lenis({
         lerp: 0.08,
         duration: 1.4,
@@ -17,15 +16,15 @@ export const useSmoothScroll = () => {
     });
 
     function raf(time) {
-        scrollLenis.raf(time)
-        requestAnimationFrame(raf)
-      }
-      
+        scrollLenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
     requestAnimationFrame(raf);
 
     scrollLenis.on('scroll', (e) => {
         scrollY.value = e.scrollY;
-        ScrollTrigger.update()
+        ScrollTrigger.update(); // Ensure ScrollTrigger updates on scroll
     });
 
     gsap.ticker.add((time) => {
