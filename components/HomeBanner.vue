@@ -14,7 +14,7 @@
 <script setup>
 import gsap from "gsap";
 import { onMounted } from "vue";
-// import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 onMounted(() => {
   if (process.client) {

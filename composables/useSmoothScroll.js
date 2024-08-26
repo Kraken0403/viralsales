@@ -1,12 +1,14 @@
+import { ref } from 'vue'; // Ensure you import `ref` from Vue
 import Lenis from '@studio-freight/lenis';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger from GSAP
+
+// Register ScrollTrigger with GSAP
+gsap.registerPlugin(ScrollTrigger);
 
 export const scrollY = ref(0);
 
-export const useSmoothScroll = async () => {
-    const gsap = await import('gsap');
-    const { ScrollTrigger } = await import('gsap/ScrollTrigger');
-    gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin dynamically
-
+export const useSmoothScroll = () => {
     const scrollLenis = new Lenis({
         lerp: 0.08,
         duration: 1.4,
@@ -19,12 +21,12 @@ export const useSmoothScroll = async () => {
         scrollLenis.raf(time);
         requestAnimationFrame(raf);
     }
-
+      
     requestAnimationFrame(raf);
 
     scrollLenis.on('scroll', (e) => {
         scrollY.value = e.scrollY;
-        ScrollTrigger.update(); // Ensure ScrollTrigger updates on scroll
+        ScrollTrigger.update(); // Ensure ScrollTrigger is updated
     });
 
     gsap.ticker.add((time) => {

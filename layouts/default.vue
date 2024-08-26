@@ -57,8 +57,7 @@ router.afterEach(animateIn);
 
 
 onMounted(async() => {
-  const { gsap } = await import('gsap');
-  const { ScrollTrigger } = await import('gsap/ScrollTrigger');
+
   gsap.registerPlugin(ScrollTrigger);
 
   useSmoothScroll(); 

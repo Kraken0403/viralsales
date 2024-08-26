@@ -132,11 +132,11 @@ export default {
 </script>
 
 <script setup>
-import ScrollTrigger from "gsap/ScrollTrigger";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 import { onMounted } from "vue"; // Import onMounted from Vue
 
 if (process.client) {
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 
   onMounted(() => {
     animateHeader();
