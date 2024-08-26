@@ -17,7 +17,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 onMounted(() => {
   if (process.client) {
-    gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".ab-image-img img", {
       y: (i, el) =>
