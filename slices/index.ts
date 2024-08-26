@@ -10,7 +10,7 @@ export const components = defineSliceZoneComponents({
   home_about_section: defineAsyncComponent(
     () => import("./HomeAboutSection/index.vue"),
   ),
-  home_hero: defineAsyncComponent(() => import("./HomeHero/index.vue")),
+  home_hero: defineAsyncComponent(() => import("./Homehero/index.vue")),
   home_products_slider: defineAsyncComponent(
     () => import("./HomeProductsSlider/index.vue"),
   ),
