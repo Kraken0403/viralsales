@@ -1,0 +1,42 @@
+{
+  "id": "home_products_slider",
+  "type": "SharedSlice",
+  "name": "HomeProductsSlider",
+  "description": "HomeProductsSlider",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "home_products_content": {
+          "type": "Text",
+          "config": {
+            "label": "Home Products Content",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "home_product_title": {
+          "type": "Text",
+          "config": {
+            "label": "Home Product Title",
+            "placeholder": ""
+          }
+        },
+        "home_product_image": {
+          "type": "Image",
+          "config": {
+            "label": "Home Product Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+.project-card-wrapper {
+    
+    .project-card {
+        padding-bottom: 15rem;
+
+        &:last-child {
+            padding-bottom: 0px;
+        }
+        .project-card-image {
+            width: 100%;
+            height: 65rem;
+            overflow: hidden;
+            border-radius: 25px;
+
+            &:hover {
+                img {
+                    scale: 1.05;
+                    transform: rotate(-1deg);
+                    transition: all 0.3s ease-out;
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 25px;
+                transition: all 0.3s ease-out;
+
+            }
+        }
+
+        &-content {
+            padding: 35px 0 0 25px;
+            max-width: 60%;
+            h2 {
+                font-size: 3.56rem;
+                font-weight: 600;
+                color: #000;
+                margin-bottom: 15px;
+            }
+
+             p{
+                font-size: 2.56rem;
+                color: #121212;
+                line-height: 1.4;
+             }
+
+             .project-tags {
+                display: flex;
+                padding-top: 25px;
+                .project-tag {
+                    border: 1px solid #000;
+                    border-radius: 30px;
+                    padding: 6px 22px;
+                    margin-right: 10px;
+                    p { 
+                        font-size: 1.8rem;
+                        text-transform: uppercase;
+                    }
+                }
+             }
+        }
+    }
+}

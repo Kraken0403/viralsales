@@ -1,0 +1,63 @@
+{
+  "id": "testimonials",
+  "type": "SharedSlice",
+  "name": "Testimonials",
+  "description": "Testimonials",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "news_title": {
+          "type": "Text",
+          "config": {
+            "label": "News Title",
+            "placeholder": ""
+          }
+        },
+        "news_content": {
+          "type": "Text",
+          "config": {
+            "label": "News Content",
+            "placeholder": ""
+          }
+        },
+        "news_image": {
+          "type": "Image",
+          "config": {
+            "label": "News Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "testimonial_name": {
+          "type": "Text",
+          "config": {
+            "label": "Testimonial Name",
+            "placeholder": ""
+          }
+        },
+        "testimonial_date": {
+          "type": "Text",
+          "config": {
+            "label": "Testimonial Date",
+            "placeholder": ""
+          }
+        },
+        "testimonial_content": {
+          "type": "Text",
+          "config": {
+            "label": "Testimonial Content",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

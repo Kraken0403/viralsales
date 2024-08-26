@@ -1,0 +1,126 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"product_image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+								"width": 6000,
+								"height": 4000
+							},
+							"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+							"width": 6000,
+							"height": 4000,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"product_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "coffee",
+							"type": "Text"
+						}
+					],
+					[
+						"product_category",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "Protective Textures",
+							"type": "Select"
+						}
+					],
+					[
+						"product_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Enim eu id esse consequat Lorem excepteur enim sint commodo eu amet. Adipisicing pariatur laborum sit occaecat occaecat non occaecat."
+									}
+								}
+							]
+						}
+					],
+					[
+						"feature_one",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "burn",
+							"type": "Text"
+						}
+					],
+					[
+						"feature_two",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "soft",
+							"type": "Text"
+						}
+					],
+					[
+						"feature_three",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "city",
+							"type": "Text"
+						}
+					],
+					[
+						"feature_four",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "son",
+							"type": "Text"
+						}
+					],
+					[
+						"feature_five",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "shelf",
+							"type": "Text"
+						}
+					],
+					[
+						"feature_six",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "famous",
+							"type": "Text"
+						}
+					],
+					[
+						"product_tags",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "nearly",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,57 @@
+{
+  "id": "project_card",
+  "type": "SharedSlice",
+  "name": "ProjectCard",
+  "description": "ProjectCard",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "project_info": {
+          "type": "Group",
+          "config": {
+            "label": "Project Info",
+            "repeat": true,
+            "fields": {
+              "project_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Project Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "project_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Project Title",
+                  "placeholder": ""
+                }
+              },
+              "project_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Project Description",
+                  "placeholder": ""
+                }
+              },
+              "project_tags": {
+                "type": "Text",
+                "config": {
+                  "label": "Project Tags",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

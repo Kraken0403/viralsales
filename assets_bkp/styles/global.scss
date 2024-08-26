@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+html {
+    font-size: .625vw;;
+}
+
+img {
+    width: 100%;
+}
+
+.section {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    overflow: hidden;
+}
+
+.container-wide {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 4vw;
+}
+
+.container-narrow {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10.625vw;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+// Use imported fonts
+body {
+  font-family: 'Archivo', sans-serif;
+  overflow-x: hidden;
+}
+
+// Rows and Columns
+
+.row{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-50 {
+    width: 45%;
+    position: relative;
+}
+.col-25 {
+    width: 25%;
+    position: relative;
+}
+
+.col-75 {
+    width: 75%;
+    position: relative;
+}
+
+html.lenis, html.lenis body {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  @media (max-width: 767px) {
+    .container-narrow {
+      padding: 0 5vw;
+    }
+}

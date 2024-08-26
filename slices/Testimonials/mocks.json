@@ -1,0 +1,72 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"news_title": {
+				"__TYPE__": "FieldContent",
+				"value": "public",
+				"type": "Text"
+			},
+			"news_image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+					"width": 3168,
+					"height": 4752
+				},
+				"url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+				"width": 3168,
+				"height": 4752,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"news_content": {
+				"__TYPE__": "FieldContent",
+				"value": "girl",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"testimonial_date",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "neighbor",
+							"type": "Text"
+						}
+					],
+					[
+						"testimonial_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "length",
+							"type": "Text"
+						}
+					],
+					[
+						"testimonial_content",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "slabs",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

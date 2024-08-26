@@ -1,0 +1,107 @@
+{
+  "id": "product_card",
+  "type": "SharedSlice",
+  "name": "ProductCard",
+  "description": "ProductCard",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "product_image": {
+          "type": "Image",
+          "config": {
+            "label": "Product Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "product_title": {
+          "type": "Text",
+          "config": {
+            "label": "Product Title",
+            "placeholder": ""
+          }
+        },
+        "product_category": {
+          "type": "Select",
+          "config": {
+            "label": "Product Category",
+            "placeholder": "",
+            "options": [
+              "Interior Paint",
+              "Exterior Paint",
+              "Enamels",
+              "Primers",
+              "Putty",
+              "Protective Textures"
+            ]
+          }
+        },
+        "product_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Product Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "feature_one": {
+          "type": "Text",
+          "config": {
+            "label": "Feature One",
+            "placeholder": ""
+          }
+        },
+        "feature_two": {
+          "type": "Text",
+          "config": {
+            "label": "Feature Two",
+            "placeholder": ""
+          }
+        },
+        "feature_three": {
+          "type": "Text",
+          "config": {
+            "label": "Feature Three",
+            "placeholder": ""
+          }
+        },
+        "feature_four": {
+          "type": "Text",
+          "config": {
+            "label": "Feature Four",
+            "placeholder": ""
+          }
+        },
+        "feature_five": {
+          "type": "Text",
+          "config": {
+            "label": "Feature Five",
+            "placeholder": ""
+          }
+        },
+        "feature_six": {
+          "type": "Text",
+          "config": {
+            "label": "Feature Six",
+            "placeholder": ""
+          }
+        },
+        "product_tags": {
+          "type": "Text",
+          "config": {
+            "label": "Product Tags",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

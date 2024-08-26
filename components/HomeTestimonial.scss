@@ -1,0 +1,147 @@
+.home-testimonials {
+  padding: 0 0 15rem 0;
+  .swiper {
+    overflow: visible;
+  }
+  .ht-title {
+    h4 {
+      font-size: 3.6rem;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+
+  .ht-slider {
+    position: relative;
+    padding: 3rem 0;
+
+    .swiper {
+      overflow: visible;
+    }
+
+    .swiper-navigation {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      .custom-button {
+        background-color: #000;
+        color: #fff;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 36rem 40rem !important;
+      }
+
+      .custom-button::after {
+        font-size: 16px;
+      }
+    }
+
+    // Hide default Swiper navigation buttons
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+
+  .ht-card {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+    padding: 3rem;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h4 {
+        border: 1px solid #262626;
+        padding: 6px 22px;
+        border-radius: 30px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: #262626;
+      }
+
+      p {
+        color: #727272;
+        font-size: 14px;
+      }
+    }
+
+    &-body {
+      p {
+        font-size: 1.8rem;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .home-testimonials {
+    padding-bottom: 25rem;
+    .ht-title {
+      h4 {
+        font-size: 7.5rem !important;
+      }
+    }
+
+    .ht-card {
+      width: 95%;
+      height: fit-content;
+      padding: 5rem;
+
+      &-header {
+        h4,
+        p {
+          font-size: 5rem !important;
+        }
+      }
+
+      &-body {
+        p {
+          margin-top: 10rem;
+          text-align: left;
+          font-size: 6rem !important;
+        }
+      }
+    }
+  }
+
+  .swiper-navigation {
+    .custom-button {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+    }
+  }
+
+  // Show custom buttons on mobile
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ht-card {
+    width: 95%;
+    height: fit-content !important;
+
+    &-body {
+      p {
+        margin-top: 10%;
+      }
+    }
+  }
+}

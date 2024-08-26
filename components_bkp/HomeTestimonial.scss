@@ -1,0 +1,54 @@
+.home-testimonials {
+    padding: 0 0 15rem 0;
+    .swiper {
+        overflow: visible;
+    }
+    .ht-title {
+        h4 {
+            font-size: 3.6rem;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+    }
+
+    .ht-slider{
+        padding: 3rem 0;
+    }
+
+    .ht-card {
+        background-color: #f4f4f4;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20rem;
+        padding: 3rem;
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h4{
+                border: 1px solid #262626;
+                padding: 6px 22px;
+                border-radius: 30px;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 1.2;
+                color: #262626;
+            }
+
+            p {
+                color: #727272;
+            }
+        }
+
+        &-body {
+            p {
+                font-size: 1.6rem;
+                line-height: 1.2;
+            }
+        }
+    }
+
+}

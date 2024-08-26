@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"about_company": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "In aliqua dolor fugiat ut laboris nostrud eu enim excepteur magna velit adipisicing. Sint sunt aute ipsum labore laboris amet velit cillum tempor proident et aute aliquip."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

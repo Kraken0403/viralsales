@@ -1,0 +1,107 @@
+{
+  "id": "featured_projects",
+  "type": "SharedSlice",
+  "name": "FeaturedProjects",
+  "description": "FeaturedProjects",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "project_one_title": {
+          "type": "Text",
+          "config": {
+            "label": "Project One Title",
+            "placeholder": ""
+          }
+        },
+        "project_one_image": {
+          "type": "Image",
+          "config": {
+            "label": "Project One Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "project_one_content": {
+          "type": "Text",
+          "config": {
+            "label": "Project One Content",
+            "placeholder": ""
+          }
+        },
+        "project_two_title": {
+          "type": "Text",
+          "config": {
+            "label": "Project Two Title",
+            "placeholder": ""
+          }
+        },
+        "project_two_image": {
+          "type": "Image",
+          "config": {
+            "label": "Project Two Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "project_two_content": {
+          "type": "Text",
+          "config": {
+            "label": "Project Two Content",
+            "placeholder": ""
+          }
+        },
+        "project_three_title": {
+          "type": "Text",
+          "config": {
+            "label": "Project Three Title",
+            "placeholder": ""
+          }
+        },
+        "project_three_image": {
+          "type": "Image",
+          "config": {
+            "label": "Project Three Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "project_three_content": {
+          "type": "Text",
+          "config": {
+            "label": "Project Three Content",
+            "placeholder": ""
+          }
+        },
+        "project_four_title": {
+          "type": "Text",
+          "config": {
+            "label": "Project Four Title",
+            "placeholder": ""
+          }
+        },
+        "project_four_image": {
+          "type": "Image",
+          "config": {
+            "label": "Project Four Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "project_four_content": {
+          "type": "Text",
+          "config": {
+            "label": "Project Four Content",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

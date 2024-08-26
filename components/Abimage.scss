@@ -1,0 +1,47 @@
+.ab-image {
+  width: 100%;
+  position: relative;
+  &-img {
+    width: 100%;
+    height: 90rem;
+    object-fit: cover;
+    position: relative;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 80px;
+    // border: 1px solid black;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+  &-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .ab-image {
+    &-img {
+      border-radius: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ab-image {
+    &-img {
+      border-radius: 40px;
+    }
+  }
+}

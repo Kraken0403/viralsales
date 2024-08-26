@@ -1,0 +1,20 @@
+.ab-hero {
+    width: 100%;
+    position: relative;
+    &-img {
+        width: 120%;
+        height: 120%;
+        object-fit: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-img-wrapper{
+        width: 100%;
+        height: 55rem;
+        overflow: hidden;
+        position: relative;
+    
+    }
+}

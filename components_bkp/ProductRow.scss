@@ -1,0 +1,20 @@
+.products-row-wrapper {
+    padding: 10rem 0;
+    // margin-bottom: 12rem;
+    .products-row {
+        width: 85%;
+        position: relative;
+
+        .col-50 {
+            margin-bottom: 15rem;
+
+            &:nth-child(odd) {
+                margin-top: -15rem
+            }
+        }
+
+        .left {
+            margin-top: -15rem;
+        }
+    }
+}
