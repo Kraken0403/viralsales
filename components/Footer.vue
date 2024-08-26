@@ -9,9 +9,9 @@
                 Can't Decide which color suits your <br />
                 place the best?
               </h2>
-              <a href="/contact-us">
-                <Button buttonText="Contact Us" />
-              </a>
+            
+                <Button buttonText="Contact Us" link="/contact-us"/>
+            
             </div>
           </div>
           <div class="col-50">
@@ -64,7 +64,7 @@
 </template>
 
 <script setup>
-import Button from "./Button.vue";
+// import Button from "./Button.vue";
 </script>
 
 <style src="./Footer.scss" scoped></style>

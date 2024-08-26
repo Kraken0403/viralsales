@@ -49,7 +49,7 @@
 </template>
 
 
-<script setup lang="ts">
+<script setup >
   import { useAsyncData } from "#app";
   import { usePrismic } from "@prismicio/vue";
 
