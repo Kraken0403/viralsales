@@ -3,7 +3,7 @@ import gsap from 'gsap';
 
 import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger from GSAP
 
-gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
+// gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
 
 export const scrollY = ref(0);
 
