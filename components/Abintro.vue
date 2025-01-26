@@ -8,7 +8,7 @@
                     </div>
 
                     <div class="">
-                        <i>Sales & Traders</i>
+                        <i>Sales & Suppliers</i>
                     </div>
                 </h1>
             </div>

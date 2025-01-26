@@ -47,6 +47,7 @@ body {
   position: relative;
   width: 100%;
   flex-wrap: wrap;
+  // gap: 5rem;
   justify-content: space-between;
 }
 
@@ -56,6 +57,11 @@ body {
 }
 .col-25 {
   width: 25%;
+  position: relative;
+}
+
+.col-33{
+  width: 33.33%;
   position: relative;
 }
 

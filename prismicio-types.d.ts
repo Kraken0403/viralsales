@@ -642,14 +642,34 @@ export interface ProductCardSliceDefaultItem {
   feature_six: prismic.KeyTextField;
 
   /**
-   * Product Tags field in *ProductCard → Items*
+   * Company field in *ProductCard → Items*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: product_card.items[].product_tags
+   * - **API ID Path**: product_card.items[].company
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  product_tags: prismic.KeyTextField;
+  company: prismic.KeyTextField;
+
+  /**
+   * Product Tag 1 field in *ProductCard → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_card.items[].product_tag_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  product_tag_1: prismic.KeyTextField;
+
+  /**
+   * Product Tag 2 field in *ProductCard → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_card.items[].product_tag_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  product_tag_2: prismic.KeyTextField;
 }
 
 /**

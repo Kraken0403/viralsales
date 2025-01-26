@@ -60,7 +60,7 @@
             <p>Get in Touch</p>
           </div>
           <div class="menu-footer-contact">
-            <nuxt-link>hello@viralsalesandsuppliers.com</nuxt-link>
+            <nuxt-link>info@viralsales.co.in</nuxt-link>
           </div>
         </div>
       </div>

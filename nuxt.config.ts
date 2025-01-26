@@ -10,20 +10,10 @@ export default {
   css: [
     '@/assets/styles/global.scss'
   ],
+  
 
   prismic: {
     endpoint: apiEndpoint || repositoryName,
     accessToken: 'bX9U3WZ2KfrcbOGFXliUQgtt',
-
-    routes: [
-      {
-        type: "homepage",
-        path: "/",
-      },
-      {
-        type: "about_page",
-        path: "/about",
-      }
-    ]
   }
 };

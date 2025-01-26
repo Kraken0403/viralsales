@@ -1,58 +1,55 @@
-
 <template>
-    <div>
-        <ProductsTitle @filter="updateSelectedCategory"/>
-        <div v-if="filteredProducts.length > 0">
-        <ProductsRow :productData="filteredProducts" />
-        </div>
-        <div v-else>
-        No products found in this category.
-        </div>
-        <Footer />
+  <div>
+    <ProductsTitle
+      @filter="updateFilters"
+    />
+    <div v-if="filteredProducts.length > 0">
+      <ProductsRow :productData="filteredProducts" />
     </div>
+    <div v-else>
+      No products found in this category or company.
+    </div>
+    <Footer />
+  </div>
 </template>
+
 <script>
-
 import { inject } from 'vue';
-// import { onMounted } from 'vue';
-    
+
 export default {
-    
-    data() {
-        return {
-            productData: [],
-            selectedCategory: 'All'
-        }
-    },
+  data() {
+    return {
+      productData: [],
+      selectedCategory: 'All',
+      selectedCompany: 'All',
+    };
+  },
 
-    computed: {
-        filteredProducts() {
-            if(this.selectedCategory === 'All') {
-                return this.productData;
-            }
-            else {
-                return this.productData.filter((prod) => {
-                return prod.product_category === this.selectedCategory;
-            });
-            }
-        }
-    },
+  computed: {
+    filteredProducts() {
+      return this.productData.filter((prod) => {
+        const matchesCategory =
+          this.selectedCategory === 'All' || prod.product_category === this.selectedCategory;
+        const matchesCompany =
+          this.selectedCompany === 'All' || prod.company === this.selectedCompany;
 
-    methods: {
-        updateSelectedCategory(newCategory) {
-            this.selectedCategory = newCategory;
-            console.log(newCategory)
-        }
+        return matchesCategory && matchesCompany;
+      });
     },
+  },
 
-    created(){
-        const ProductsPageData = inject('productsPageData');
-        const ProductData = ProductsPageData._rawValue;
-        this.productData = ProductData.slices[0].items;
-        console.log(this.productData)
+  methods: {
+    // This method will handle both category and company updates
+    updateFilters({ category, company }) {
+      this.selectedCategory = category;
+      this.selectedCompany = company;
     },
-}
+  },
 
+  created() {
+    const ProductsPageData = inject('productsPageData');
+    const ProductData = ProductsPageData._rawValue;
+    this.productData = ProductData.slices[0].items;
+  },
+};
 </script>
-
-

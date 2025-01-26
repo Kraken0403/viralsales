@@ -1,5 +1,5 @@
 <template>
-
+     <!-- <Preloader /> -->
     <HomeHero />
     <HomeBanner />
     <HomeAbout/>
@@ -16,4 +16,9 @@
 <style src="../components/cursor.scss">
     
 </style>
+
+<script>
+    import Preloader from '@/components/Preloader.vue';
+</script>
+
 

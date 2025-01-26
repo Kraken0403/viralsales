@@ -1,12 +1,12 @@
 <template>
-  <div class="home-hero">
+  <div class="home-hero" >
     <div class="container-narrow">
       <div class="hero-text">
         <h1>
           <div ref="firstText">
             <i><span>Bringing</span> <span>your Vision</span></i>
           </div>
-          <div>
+          <div data-speed="0">
             <span
               ><i>to life</i>
               <div class="hero-text-image">

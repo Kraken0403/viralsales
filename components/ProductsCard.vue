@@ -13,6 +13,10 @@
       <h2>
         <strong>{{ product.product_title }}</strong>
       </h2>
+      <div class="product-tags">
+        <p>{{ product.product_tag_1 }}</p>
+        <p>{{ product.product_tag_2 }}</p>
+      </div>
     </div>
   </div>
 </template>

@@ -94,10 +94,24 @@
             "placeholder": ""
           }
         },
-        "product_tags": {
+        "company": {
           "type": "Text",
           "config": {
-            "label": "Product Tags",
+            "label": "Company",
+            "placeholder": ""
+          }
+        },
+        "product_tag_1": {
+          "type": "Text",
+          "config": {
+            "label": "Product Tag 1",
+            "placeholder": ""
+          }
+        },
+        "product_tag_2": {
+          "type": "Text",
+          "config": {
+            "label": "Product Tag 2",
             "placeholder": ""
           }
         }

@@ -4,7 +4,7 @@
       <img
         data-speed="0.9"
         ref="banner"
-        src="../assets/images/sample-7.webp"
+        src="../assets/images/jotun-wall.jpeg"
         alt=""
       />
     </div>
@@ -17,22 +17,22 @@ import { onMounted } from "vue";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 onMounted(() => {
-  if (process.client) {
-    // gsap.registerPlugin(ScrollTrigger);
+  // if (process.client) {
+  //   // gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".home-banner-wrapper img", {
-      y: (i, el) =>
-        (1 - parseFloat(el.getAttribute("data-speed"))) *
-        ScrollTrigger.maxScroll(window),
-      ease: "none",
-      scrollTrigger: {
-        start: 0,
-        end: "max",
-        invalidateOnRefresh: true,
-        scrub: 0,
-      },
-    });
-  }
+  //   gsap.to(".home-banner-wrapper img", {
+  //     y: (i, el) =>
+  //       (1 - parseFloat(el.getAttribute("data-speed"))) *
+  //       ScrollTrigger.maxScroll(window),
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       start: 0,
+  //       end: "max",
+  //       invalidateOnRefresh: true,
+  //       scrub: 0,
+  //     },
+  //   });
+  // }
 });
 </script>
 
